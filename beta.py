@@ -135,6 +135,7 @@ def checkIntadd1(i):
         #to check if the inputs are positive integers
         no = -1
         return no
+    
 
 
     yes = int(i)+1
@@ -261,7 +262,7 @@ while True:
         favourable_outcomes = int(checkIntadd1(values[0]))
         unfavourable_outcomes = int(checkIntadd1(values[1]))
 
-        if(unfavourable_outcomes >=0 and favourable_outcomes >=0):
+        if(unfavourable_outcomes > 0 and favourable_outcomes > 0):
 
             calculate_mean(favourable_outcomes, unfavourable_outcomes)
             window1['Error1'].update(' ')
@@ -273,7 +274,7 @@ while True:
         favourable_outcomes = int(checkIntadd1(values[0]))
         unfavourable_outcomes = int(checkIntadd1(values[1]))
 
-        if(unfavourable_outcomes >=0 and favourable_outcomes >=0):
+        if(unfavourable_outcomes > 0 and favourable_outcomes > 0):
             window1['Error1'].update(' ')
             calculate_std(favourable_outcomes, unfavourable_outcomes)
         else:
